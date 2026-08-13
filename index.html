@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma & Matcha | Artisanal Coffee & Green Tea</title>
+    <link rel="stylesheet" href="projectweb.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Aroma & Matcha</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="btn-nav">Order Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Brewed to Perfection</h1>
+            <p>Discover our signature hot coffees and ceremonial-grade hot matcha, crafted to warm your soul.</p>
+            <a href="#menu" class="btn-primary">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Featured Drinks</h2>
+        <p class="section-subtitle">Handcrafted daily with premium ingredients</p>
+        
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <div class="card-img coffee-bg"></div>
+                <div class="card-content">
+                    <h3>Signature Hot Coffee</h3>
+                    <p class="price">$4.50</p>
+                    <p class="description">Rich, full-bodied espresso paired with velvety steamed milk and a delicate foam top.</p>
+                    <button class="btn-order" onclick="addToCart('Signature Hot Coffee', 4.50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <div class="card-img matcha-bg"></div>
+                <div class="card-content">
+                    <h3>Ceremonial Hot Matcha</h3>
+                    <p class="price">$5.00</p>
+                    <p class="description">Authentic stone-ground Japanese green tea whisked smooth with your choice of steamed milk.</p>
+                    <button class="btn-order" onclick="addToCart('Ceremonial Hot Matcha', 5.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <div class="card-img latte-bg"></div>
+                <div class="card-content">
+                    <h3>Vanilla Bean Latte</h3>
+                    <p class="price">$5.25</p>
+                    <p class="description">Espresso infused with real organic vanilla bean paste and warm, frothy milk.</p>
+                    <button class="btn-order" onclick="addToCart('Vanilla Bean Latte', 5.25)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 4 (New) -->
+            <div class="menu-card">
+                <div class="card-img caramel-bg"></div>
+                <div class="card-content">
+                    <h3>Caramel Macchiato</h3>
+                    <p class="price">$5.50</p>
+                    <p class="description">Fresh steamed milk with vanilla-flavored syrup, marked with espresso and caramel drizzle.</p>
+                    <button class="btn-order" onclick="addToCart('Caramel Macchiato', 5.50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 5 (New) -->
+            <div class="menu-card">
+                <div class="card-img iced-matcha-bg"></div>
+                <div class="card-content">
+                    <h3>Iced Matcha Latte</h3>
+                    <p class="price">$5.25</p>
+                    <p class="description">Chilled ceremonial matcha poured over ice with cold creamy milk of your choice.</p>
+                    <button class="btn-order" onclick="addToCart('Iced Matcha Latte', 5.25)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 6 (New) -->
+            <div class="menu-card">
+                <div class="card-img espresso-bg"></div>
+                <div class="card-content">
+                    <h3>Double Espresso</h3>
+                    <p class="price">$3.75</p>
+                    <p class="description">A bold, concentrated shot of our signature dark-roast coffee beans.</p>
+                    <button class="btn-order" onclick="addToCart('Double Espresso', 3.75)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 7 (New) -->
+            <div class="menu-card">
+                <div class="card-img tea-bg"></div>
+                <div class="card-content">
+                    <h3>Honey Ginger Tea</h3>
+                    <p class="price">$4.25</p>
+                    <p class="description">Soothing hot herbal infusion blended with fresh ginger root and organic wild honey.</p>
+                    <button class="btn-order" onclick="addToCart('Honey Ginger Tea', 4.25)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Summary Bar -->
+    <div id="cart-bar" class="cart-bar">
+        <span>Cart Items: <strong id="cart-count">0</strong> | Total: $<strong id="cart-total">0.00</strong></span>
+        <button class="btn-checkout" onclick="checkout()">Checkout</button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Aroma & Matcha Coffee Shop. All rights reserved.</p>
+        <p>Visit us daily: 7:00 AM - 8:00 PM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
